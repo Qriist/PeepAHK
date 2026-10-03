@@ -421,6 +421,9 @@ class Peep {
             ; Duplicate detection
             case ((item is Object) && this.is_duplicate(item)):
                 return Peep.duplicate_ref_value '<Type: ' item_type '>'
+            ; Null support
+            case (item_type = "Null"): 
+                return "NULL"
             ; The "I f*@ked up" clause
             case !IsObject(item):
                 return MsgBox('GroggyOtter didn`'t account for this.'
