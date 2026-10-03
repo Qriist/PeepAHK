@@ -336,7 +336,7 @@ class Peep {
             'MenuBar',           ['ClickCount', 'Default', 'Handle'],
             'RegExMatchInfo',    ['Pos', 'Len', 'Count', 'Mark']
         )
-        this.peeps := props
+        this.peeps := peeps
     }
 
     static btn_data := [
